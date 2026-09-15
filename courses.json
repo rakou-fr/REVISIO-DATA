@@ -1,0 +1,23 @@
+[
+  {
+    "id": "slam_dev",
+    "code": "SLAM-D1",
+    "title": "Conception et Développement d'Applications",
+    "chapters": [
+      {
+        "id": "ch_poo",
+        "title": "Programmation Orientée Objet",
+        "description": "Encapsulation, héritage, polymorphisme et abstraction.",
+        "questions": [
+          {
+            "id": "q1",
+            "question": "En POO, quel principe permet à une classe enfant de redéfinir une méthode mère ?",
+            "options": ["L'encapsulation", "Le polymorphisme", "L'abstraction", "L'instanciation"],
+            "answerIndex": 1,
+            "explanation": "Le polymorphisme d'adresses ou de sous-typage permet de redéfinir le comportement d'une méthode héritée."
+          }
+        ]
+      }
+    ]
+  }
+]
