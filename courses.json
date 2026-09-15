@@ -308,8 +308,187 @@
             ],
             "answerIndex": 1,
             "explanation": "L'intégrité référentielle garantit la cohérence des liens entre les tables (par exemple, empêcher la création d'une commande associée à un identifiant client qui n'existe pas)."
+          },
+          {
+            "id": "q26",
+            "question": "Selon le cours, quel est le format standard de stockage d'un champ de type DATE ?",
+            "options": [
+              "DD/MM/YYYY",
+              "YYYY-MM-DD",
+              "MM-DD-YYYY",
+              "YYYY/DD/MM"
+            ],
+            "answerIndex": 1,
+            "explanation": "Le type DATE permet de stocker une date au format YYYY-MM-DD."
+          },
+          {
+            "id": "q27",
+            "question": "Comment le type BOOLEAN est-il techniquement codé au sein du SGBD MySQL ?",
+            "options": [
+              "VARCHAR(1)",
+              "tinyint(1)",
+              "INT(10)",
+              "DECIMAL(1,0)"
+            ],
+            "answerIndex": 1,
+            "explanation": "En MySQL, le type BOOLEAN est représenté sous la forme d'un tinyint(1) (0 pour FALSE, 1 pour TRUE)."
+          },
+          {
+            "id": "q28",
+            "question": "À quoi sert la propriété DEFAULT sur un champ de table ?",
+            "options": [
+              "À forcer la saisie d'une valeur par l'utilisateur",
+              "À attribuer automatiquement une valeur prédéfinie lorsqu'aucune valeur n'est fournie",
+              "À supprimer l'enregistrement en cas d'erreur",
+              "À convertir le champ en clé primaire"
+            ],
+            "answerIndex": 1,
+            "explanation": "La contrainte DEFAULT permet d'attribuer automatiquement une valeur par défaut quand aucune donnée n'est spécifiée à l'insertion."
+          },
+          {
+            "id": "q29",
+            "question": "Que garantit la contrainte UNIQUE appliquée à une colonne ?",
+            "options": [
+              "Que le champ devient automatiquement la clé primaire",
+              "Que deux enregistrements ne pourront pas posséder la même valeur pour ce champ",
+              "Que la colonne ne accepte que des nombres entiers",
+              "Que la valeur ne peut plus jamais être modifiée"
+            ],
+            "answerIndex": 1,
+            "explanation": "La propriété UNIQUE impose l'unicité des valeurs d'un champ pour éviter les doublons sur cette colonne."
+          },
+          {
+            "id": "q30",
+            "question": "Dans la représentation graphique du MLD (outil Looping MCD), comment les clés étrangères sont-elles stylisées ?",
+            "options": [
+              "En gras et rouge",
+              "En bleu et en italique",
+              "Surlignées en jaune",
+              "Précédées d'une astérisque (*)"
+            ],
+            "answerIndex": 1,
+            "explanation": "Sur le schéma graphique de Looping MCD, la clé primaire est soulignée et la clé étrangère apparaît en bleu et italique."
+          },
+          {
+            "id": "q31",
+            "question": "Quel autre nom est attribué au Modèle Conceptuel de Données (MCD) ?",
+            "options": [
+              "Modèle Entité Association",
+              "Modèle Logique de Données",
+              "Modèle Physique de Données",
+              "Modèle Objet Relationnel"
+            ],
+            "answerIndex": 0,
+            "explanation": "Le Modèle Conceptuel de Données (MCD) est également appelé Modèle Entité Association."
+          },
+          {
+            "id": "q32",
+            "question": "Quel autre nom est attribué au Modèle Logique de Données (MLD) dans ce contexte ?",
+            "options": [
+              "Modèle Conceptuel",
+              "Modèle Relationnel",
+              "Modèle Réseau",
+              "Modèle Matériel"
+            ],
+            "answerIndex": 1,
+            "explanation": "Le Modèle Logique de Données (MLD) correspond au modèle relationnel."
+          },
+          {
+            "id": "q33",
+            "question": "Dans le cours, quel est le rôle attribué à la table LIGNECOMMANDE ?",
+            "options": [
+              "Stocker les coordonnées bancaires des clients",
+              "Contenir les caractéristiques détaillées des articles d'une commande",
+              "Enregistrer les identifiants de connexion des employés",
+              "Lister l'historique des requêtes SQL exécutées"
+            ],
+            "answerIndex": 1,
+            "explanation": "La table LIGNECOMMANDE contient les caractéristiques détaillées d'une commande (quantité commandée, remise, produits concernés)."
+          },
+          {
+            "id": "q34",
+            "question": "Dans la table LIGNECOMMANDE (#idCOM, #idPRO, qteCommandee, remiseLigne), de quoi est composée la clé primaire ?",
+            "options": [
+              "Du seul champ idCOM",
+              "Du seul champ idPRO",
+              "De la combinaison des champs idCOM et idPRO",
+              "Du champ qteCommandee"
+            ],
+            "answerIndex": 2,
+            "explanation": "Il s'agit d'une clé primaire composée formée par le couple (idCOM, idPRO) pour identifier chaque ligne de commande."
+          },
+          {
+            "id": "q35",
+            "question": "Que permet de stocker le type de données TIME ?",
+            "options": [
+              "Une durée en millisecondes uniquement",
+              "Une heure au format HH:MM:SS",
+              "Un horodatage complet avec date et heure",
+              "Un fuseau horaire texte"
+            ],
+            "answerIndex": 1,
+            "explanation": "Le type TIME est réservé au stockage de l'heure au format HH:MM:SS."
+          },
+          {
+            "id": "q36",
+            "question": "Dans quel format le type DATETIME stocke-t-il les informations ?",
+            "options": [
+              "Uniquement l'heure au format HH:MM:SS",
+              "À la fois une date et une heure",
+              "Le nombre de secondes écoulées depuis 1970",
+              "Le jour de la semaine en texte"
+            ],
+            "answerIndex": 1,
+            "explanation": "Le type DATETIME permet de stocker conjointement une date et une heure."
+          },
+          {
+            "id": "q37",
+            "question": "Quelle situation illustre une violation de l'intégrité référentielle ?",
+            "options": [
+              "Insérer un prix sous forme de nombre décimal",
+              "Associer une commande à un numéro de client (idCLI) qui n'existe pas dans la table CLIENT",
+              "Créer une table sans champ de type VARCHAR",
+              "Utiliser le même nom de champ dans deux tables différentes"
+            ],
+            "answerIndex": 1,
+            "explanation": "L'intégrité référentielle est violée lorsqu'une clé étrangère fait référence à une valeur inexistante dans la table cible."
+          },
+          {
+            "id": "q38",
+            "question": "Pourquoi l'utilisation de fichiers isolés devient-elle difficile par rapport à une base de données ?",
+            "options": [
+              "Parce que les fichiers isolés ne prennent pas en charge le texte",
+              "Lorsque le volume augmente et que les informations sont interliées",
+              "Parce que les fichiers isolés nécessitent obligatoirement un SGBD",
+              "Parce qu'un fichier ne peut contenir qu'un seul chiffre"
+            ],
+            "answerIndex": 1,
+            "explanation": "Gérer des données dans des fichiers séparés devient difficile quand le volume grandit et que les informations possèdent des liens entre elles."
+          },
+          {
+            "id": "q39",
+            "question": "Parmi les propositions suivantes, laquelle décrit la notion de « valeur » dans une table ?",
+            "options": [
+              "Le nom de la colonne",
+              "Le contenu d'un champ pour un enregistrement donné",
+              "Le nombre total de lignes de la table",
+              "Le type de données (INT, VARCHAR, etc.)"
+            ],
+            "answerIndex": 1,
+            "explanation": "Une valeur correspond au contenu précis d'un champ pour un enregistrement spécifique (ex: la ville 'Montpellier' pour le client 1)."
+          },
+          {
+            "id": "q40",
+            "question": "Quel est l'un des principaux objectifs de la normalisation d'une base de données ?",
+            "options": [
+              "Multiplier le nombre de doublons pour sécuriser les données",
+              "Limiter les répétitions inutiles et éviter les incohérences lors des mises à jour",
+              "Forcer l'utilisation d'une seule table unique pour toutes les données",
+              "Supprimer le besoin d'utiliser des clés primaires"
+            ],
+            "answerIndex": 1,
+            "explanation": "La normalisation vise à réduire la redondance des données pour faciliter les mises à jour et empêcher les incohérences."
           }
-        ]
       }
     ]
   }
