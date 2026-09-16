@@ -43,5 +43,14 @@
     "pts": 0,
     "title": "Wram X DDR4",
     "progress": {}
+  },
+  {
+    "id": "mohamed.matti",
+    "username": "Mohamed",
+    "passwordHash": "93c9242b254bdbe1ebaf7658e234993181df22c289e2a6f523a8ff22c9434424",
+    "role": "Mobutu",
+    "pts": 0,
+    "title": "Mobutu",
+    "progress": {}
   }
 ]
