@@ -17,7 +17,7 @@
     "title": "Monocouille",
     "progress": {}
   },
-    {
+  {
     "id": "Dodo",
     "username": "Dodo",
     "passwordHash": "8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918",
@@ -26,13 +26,22 @@
     "title": "Monocouille",
     "progress": {}
   },
-    {
+  {
     "id": "EtienneG",
     "username": "Feur en fleur",
     "passwordHash": "4c2297e8942a4a410c65b81e4ed9a14963accb375e1813a502e114e0b935e655",
     "role": "Ejaculator3000",
     "pts": 0,
     "title": "Ejaculator3000",
+    "progress": {}
+  },
+  {
+    "id": "waram6",
+    "username": "wram",
+    "passwordHash": "85e3e8725a2f35df2e91718c6d4147912c97aa396972022b3cc5b4c27f1d7b77",
+    "role": "DDR5",
+    "pts": 0,
+    "title": "Wram X DDR4",
     "progress": {}
   }
 ]
