@@ -61,5 +61,14 @@
     "pts": 0,
     "title": "Benoit",
     "progress": {}
+  },
+  {
+    "id": "enzo",
+    "username": "Binaire",
+    "passwordHash": "6e22bd4867cc0da43411dc1e912861738fdab4427a5efbc1e0b0a5e7d07f024f",
+    "role": "Bande",
+    "pts": 0,
+    "title": "GoMuscu",
+    "progress": {}
   }
 ]
