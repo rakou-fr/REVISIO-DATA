@@ -79,5 +79,14 @@
     "pts": 0,
     "title": "Congo",
     "progress": {}
+  },
+  {
+    "id": "goataga",
+    "username": "goataga",
+    "passwordHash": "0fb2349e1ba68496aa27f444294d7da4c44e2bf31ec3b7ce5e5549efb53271fe",
+    "role": "The French Monster",
+    "pts": 0,
+    "title": "COD",
+    "progress": {}
   }
 ]
