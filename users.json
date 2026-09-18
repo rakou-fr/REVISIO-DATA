@@ -70,5 +70,14 @@
     "pts": 0,
     "title": "GoMuscu",
     "progress": {}
+  },
+  {
+    "id": "212adam",
+    "username": "212adam",
+    "passwordHash": "1509fcd7b3c0494b258edda3332123a7897902d143689357d6774c76097ff54e",
+    "role": "brooter",
+    "pts": 0,
+    "title": "Congo",
+    "progress": {}
   }
 ]
