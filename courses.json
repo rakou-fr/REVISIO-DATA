@@ -492,5 +492,439 @@
             ]
             }
         ]
+    },
+    {
+    "id": "sio_reseau",
+    "code": "B1.RES-CM01",
+    "title": "Introduction aux réseaux informatiques",
+    "chapters": [
+        {
+        "id": "ch1_intro_reseau",
+        "title": "Notions fondamentales, équipements et adressage",
+        "description": "Notions de réseau (LAN/WAN/PAN), équipements (hôtes, switch, routeur, point d'accès), supports, topologies, adressage IPv4/IPv6, masques, passerelle, commandes réseau et services (DHCP, DNS, AD, HTTPS).",
+        "questions": [
+            {
+            "id": "q_res_1",
+            "question": "Qu'est-ce qu'un LAN (Local Area Network) ?",
+            "options": [
+                "Un réseau mondial interconnectant plusieurs pays",
+                "Un réseau informatique géographiquement restreint à un site ou un bâtiment",
+                "Un réseau personnel limité aux appareils Bluetooth d'une pièce",
+                "Un réseau de fibre optique réservé uniquement aux fournisseurs d'accès"
+            ],
+            "answerIndex": 1,
+            "explanation": "Un LAN relie des équipements informatiques sur une zone géographique limitée (bureau, maison, lycée)."
+            },
+            {
+            "id": "q_res_2",
+            "question": "Quel terme désigne un réseau mondial reliant les opérateurs et permettant d'interconnecter des réseaux à grande échelle ?",
+            "options": [
+                "LAN",
+                "PAN",
+                "SAN",
+                "WAN"
+            ],
+            "answerIndex": 3,
+            "explanation": "Le WAN (Wide Area Network) est un réseau étendu (comme Internet) géré par des opérateurs."
+            },
+            {
+            "id": "q_res_3",
+            "question": "Comment appelle-t-on la catégorie de réseau très courte portée que l'on trouve généralement dans un cadre individuel (ex: connexion téléphone/casque) ?",
+            "options": [
+                "PAN (Personal Area Network)",
+                "MAN (Metropolitan Area Network)",
+                "LAN (Local Area Network)",
+                "CAN (Campus Area Network)"
+            ],
+            "answerIndex": 0,
+            "explanation": "Le PAN (Personal Area Network) regroupe les équipements personnels interconnectés à très courte distance."
+            },
+            {
+            "id": "q_res_4",
+            "question": "Comment qualifie-t-on un équipement (PC, imprimante, serveur) qui ne possède qu'une seule connexion au réseau ?",
+            "options": [
+                "Périphérique réseau intermédiaire",
+                "Passerelle d'interconnexion",
+                "Hôte, terminal ou station (RTA)",
+                "Nœud de commutation"
+            ],
+            "answerIndex": 2,
+            "explanation": "Les équipements terminaux n'ayant qu'une seule interface connectée au réseau sont appelés hôtes, terminaux ou RTA."
+            },
+            {
+            "id": "q_res_5",
+            "question": "Combien de connexions réseau possède généralement le serveur d'une entreprise classique ?",
+            "options": [
+                "Une seule connexion",
+                "Au moins 4 connexions obligatoires",
+                "Autant de connexions qu'il y a d'utilisateurs",
+                "Deux connexions minimum pour le DNS"
+            ],
+            "answerIndex": 0,
+            "explanation": "Un serveur standard est relié en tant qu'hôte à une seule connexion réseau principale (hors agrégation spécifique)."
+            },
+            {
+            "id": "q_res_6",
+            "question": "Les équipements comme les switchs et les routeurs sont caractérisés par :",
+            "options": [
+                "Le fait qu'ils ne traitent que des signaux analogiques",
+                "L'absence d'adresse IP",
+                "Le fait d'avoir une seule et unique connexion au réseau",
+                "Le fait d'être reliés à plusieurs connexions réseau"
+            ],
+            "answerIndex": 3,
+            "explanation": "Les périphériques d'interconnexion (switchs, routeurs) possèdent de multiples ports pour relier les équipements entre eux."
+            },
+            {
+            "id": "q_res_7",
+            "question": "Comment appelle-t-on les éléments physiques (câbles en cuivre, fibre optique, ondes) reliant les équipements ?",
+            "options": [
+                "Les supports de transmission",
+                "Les vecteurs de commutations",
+                "Les topologies logiques",
+                "Les canaux DHCP"
+            ],
+            "answerIndex": 0,
+            "explanation": "Les câbles, la fibre ou l'air (pour le Wi-Fi) sont désignés sous le terme de supports de transmission."
+            },
+            {
+            "id": "q_res_8",
+            "question": "Quel type de câble réseau est couramment désigné par le terme 'Ethernet RJ45' ?",
+            "options": [
+                "Câble en cuivre (ex: Catégorie 5 ou 6)",
+                "Câble coaxial haute fréquence",
+                "Câble à fibre optique monomode",
+                "Câble série RS-232"
+            ],
+            "answerIndex": 0,
+            "explanation": "Le câble Ethernet RJ45 est un câble en cuivre à paires torsadées (Cat 5e, Cat 6, etc.)."
+            },
+            {
+            "id": "q_res_9",
+            "question": "Quel support de transmission offre les débits les plus rapides sur les plus longues distances ?",
+            "options": [
+                "Le câble cuivre Catégorie 5",
+                "La fibre optique",
+                "Le câble cuivre Catégorie 6",
+                "Les ondes hertziennes Wi-Fi"
+            ],
+            "answerIndex": 1,
+            "explanation": "La fibre optique utilise la lumière et offre des performances bien supérieures en portée et en débit par rapport au cuivre."
+            },
+            {
+            "id": "q_res_10",
+            "question": "Un switch classique permet-il de connecter directement des appareils sans fil (Wi-Fi) ?",
+            "options": [
+                "Oui, tous les switchs disposent d'antennes Wi-Fi",
+                "Non, il faut obligatoirement ajouter un point d'accès (Access Point)",
+                "Oui, en activant le protocole DHCP sur le switch",
+                "Non, les appareils sans fil ne peuvent pas communiquer avec un switch"
+            ],
+            "answerIndex": 1,
+            "explanation": "Un switch est filaire. Pour relier du sans-fil, on utilise un point d'accès (Access Point) connecté au switch."
+            },
+            {
+            "id": "q_res_11",
+            "question": "Quel est le rôle principal d'un switch (commutateur) ?",
+            "options": [
+                "Recevoir les messages, apprendre à quel port est associée quelle adresse destination, et réexpédier le message",
+                "Assigner dynamiquement des masques de sous-réseau aux ordinateurs",
+                "Interconnecter deux réseaux IP complètement différents",
+                "Traduire les noms de domaine en adresses IP"
+            ],
+            "answerIndex": 0,
+            "explanation": "Le switch analyse les trames, apprend les adresses de destination et réexpédie le message sur le port approprié."
+            },
+            {
+            "id": "q_res_12",
+            "question": "Comment appelle-t-on les petits blocs de données échangés sur un réseau ?",
+            "options": [
+                "Des paquets ou trames (packets / frames)",
+                "Des blocs Active Directory",
+                "Des registres d'octets",
+                "Des flux DNS"
+            ],
+            "answerIndex": 0,
+            "explanation": "Les données envoyées sur un réseau sont découpées en unités appelées paquets (niveau IP) ou trames (niveau Ethernet)."
+            },
+            {
+            "id": "q_res_13",
+            "question": "Qu'est-ce qu'une topologie physique réseau ?",
+            "options": [
+                "La vitesse maximale du débit sur la ligne Internet",
+                "L'organisation logicielle des comptes utilisateurs",
+                "La carte fidèle montrant comment les équipements sont physiquement connectés",
+                "La liste des adresses IP configurées sur un serveur"
+            ],
+            "answerIndex": 2,
+            "explanation": "La topologie physique représente l'agencement et l'interconnexion matérielle des équipements."
+            },
+            {
+            "id": "q_res_14",
+            "question": "Dans une topologie en étoile (ou bus-étoile), par quoi passent toutes les transmissions ?",
+            "options": [
+                "Uniquement par le routeur de sortie WAN",
+                "Directement d'hôte à hôte sans intermédiaire",
+                "Un équipement central (comme un switch ou un hub)",
+                "Un serveur DNS obligatoire"
+            ],
+            "answerIndex": 2,
+            "explanation": "Dans la topologie en étoile, l'ensemble des équipements est relié à un équipement d'interconnexion central."
+            },
+            {
+            "id": "q_res_15",
+            "question": "Quelle est la caractéristique d'une topologie maillée ?",
+            "options": [
+                "Chaque hôte est connecté directement à tous les autres hôtes",
+                "Tous les ordinateurs sont alignés sur un seul câble central",
+                "Les switchs sont reliés uniquement en chaîne linéaire",
+                "Chaque ordinateur est relié à une seule prise murale"
+            ],
+            "answerIndex": 0,
+            "explanation": "Dans une topologie maillée complète, tous les nœuds sont directement interconnectés les uns aux autres."
+            },
+            {
+            "id": "q_res_16",
+            "question": "Comment qualifie-t-on une topologie où les switchs sont reliés entre eux sous forme hiérarchique ?",
+            "options": [
+                "Topologie en anneau",
+                "Topologie en arbre (ou arborescente)",
+                "Topologie point à point",
+                "Topologie maillée"
+            ],
+            "answerIndex": 1,
+            "explanation": "La topologie en arbre interconnecte plusieurs topologies en étoile via une structure hiérarchique de switchs."
+            },
+            {
+            "id": "q_res_17",
+            "question": "Où sont regroupées et raccordées les prises réseau d'un bâtiment au niveau de la baie de brassage ?",
+            "options": [
+                "Sur le répartiteur d'accès Wi-Fi",
+                "Sur le serveur Active Directory",
+                "Sur un bandeau de brassage",
+                "Sur l'interface de la passerelle WAN"
+            ],
+            "answerIndex": 2,
+            "explanation": "Les câbles réseau arrivant des prises murales sont raccordés à l'arrière d'un bandeau de brassage dans l'armoire informatique."
+            },
+            {
+            "id": "q_res_18",
+            "question": "De combien d'octets est composée une adresse IPv4 ?",
+            "options": [
+                "2 octets (16 bits)",
+                "16 octets (128 bits)",
+                "8 octets (64 bits)",
+                "4 octets (32 bits)"
+            ],
+            "answerIndex": 3,
+            "explanation": "Une adresse IPv4 est codée sur 4 octets (soit 32 bits)."
+            },
+            {
+            "id": "q_res_19",
+            "question": "De combien d'octets est composée une adresse IPv6 et quel est son type de notation ?",
+            "options": [
+                "16 octets en notation hexadécimale",
+                "4 octets en notation décimale pointée",
+                "8 octets en notation binaire",
+                "32 octets en notation décimale"
+            ],
+            "answerIndex": 0,
+            "explanation": "L'IPv6 est codée sur 16 octets (128 bits) et s'écrit en notation hexadécimale (ex: 2001:db8::1)."
+            },
+            {
+            "id": "q_res_20",
+            "question": "Que signifie le terme 'notation hexadécimale' ?",
+            "options": [
+                "Un système utilisant les chiffres de 0 à 9 et les lettres de A à F",
+                "Un système composé uniquement de 0 et de 1",
+                "Un système de 10 chiffres séparés par des points",
+                "Un codage réservé uniquement aux masques de sous-réseau"
+            ],
+            "answerIndex": 0,
+            "explanation": "La base 16 (hexadécimale) utilise 16 symboles : les chiffres 0 à 9 et les lettres A à F."
+            },
+            {
+            "id": "q_res_21",
+            "question": "Quelles sont les deux parties constitutives d'une adresse IP ?",
+            "options": [
+                "Le MAC-ID et le PORT-ID",
+                "Le Net-ID et le Host-ID",
+                "Le DNS-ID et le DHCP-ID",
+                "Le WAN-ID et le LAN-ID"
+            ],
+            "answerIndex": 1,
+            "explanation": "Une adresse IP combine le Net-ID (partie réseau) et le Host-ID (partie hôte)."
+            },
+            {
+            "id": "q_res_22",
+            "question": "Quelle est la règle d'unicité d'une adresse IP ?",
+            "options": [
+                "Elle doit être mondiale et unique sur tout Internet même pour les réseaux privés",
+                "Elle doit être identique pour tous les ordinateurs d'un même switch",
+                "Elle doit être unique au sein d'un même réseau IP",
+                "Elle change automatiquement toutes les minutes"
+            ],
+            "answerIndex": 2,
+            "explanation": "Au sein d'un même réseau IP local, deux machines ne peuvent pas avoir la même adresse IP."
+            },
+            {
+            "id": "q_res_23",
+            "question": "À quoi sert le masque de sous-réseau ?",
+            "options": [
+                "À masquer l'identité du serveur sur Internet",
+                "À séparer la partie Net-ID et Host-ID de l'adresse IP",
+                "À remplacer l'adresse MAC de la carte réseau",
+                "À accélérer le téléchargement des paquets"
+            ],
+            "answerIndex": 1,
+            "explanation": "Le masque permet à la machine de savoir quelle portion de l'adresse IP correspond au réseau et laquelle correspond à l'hôte."
+            },
+            {
+            "id": "q_res_24",
+            "question": "Concernant la structure des octets d'un masque de sous-réseau classique, quelle affirmation est vraie ?",
+            "options": [
+                "Chaque octet est obligatoirement inférieur au suivant",
+                "Le premier octet est toujours supérieur ou égal au deuxième, et ainsi de suite",
+                "Les octets peuvent être placés dans un ordre aléatoire",
+                "Un masque comporte toujours au moins un octet négatif"
+            ],
+            "answerIndex": 1,
+            "explanation": "Un masque est une suite ininterrompue de 1 puis de 0 en binaire. En décimal, les octets sont donc décroissants (ex: 255.255.255.0)."
+            },
+            {
+            "id": "q_res_25",
+            "question": "Si deux PC peuvent communiquer directement SANS passer par une passerelle (routeur), cela signifie :",
+            "options": [
+                "Qu'ils utilisent obligatoirement le protocole HTTPS",
+                "Qu'ils sont situés dans des WAN différents",
+                "Qu'ils sont dans le même réseau IP",
+                "Qu'ils n'ont pas besoin d'adresse IP"
+            ],
+            "answerIndex": 2,
+            "explanation": "Deux hôtes du même réseau IP (même Net-ID) communiquent directement via le switch."
+            },
+            {
+            "id": "q_res_26",
+            "question": "Que doit obligatoirement traverser un hôte pour communiquer avec une machine située dans un AUTRE réseau IP ?",
+            "options": [
+                "Un serveur Active Directory",
+                "Un bandeau de brassage",
+                "Un routeur (passerelle)",
+                "Un point d'accès Wi-Fi"
+            ],
+            "answerIndex": 2,
+            "explanation": "La communication inter-réseau nécessite le franchissement d'un routeur."
+            },
+            {
+            "id": "q_res_27",
+            "question": "Qu'indique l'information 'Passerelle par défaut' (Default Gateway) dans la configuration IP d'un PC ?",
+            "options": [
+                "L'adresse IP du switch local",
+                "L'adresse IP du serveur DNS principal",
+                "L'adresse IP du routeur permettant de sortir du réseau local",
+                "L'adresse IP de l'imprimante partagée"
+            ],
+            "answerIndex": 2,
+            "explanation": "La passerelle par défaut est l'adresse de l'interface du routeur rattachée au réseau local."
+            },
+            {
+            "id": "q_res_28",
+            "question": "Quelle commande sous Windows permet d'afficher l'adresse IP, le masque et la passerelle par défaut ?",
+            "options": [
+                "ping",
+                "ipconfig",
+                "tracert",
+                "nslookup"
+            ],
+            "answerIndex": 1,
+            "explanation": "La commande 'ipconfig' donne les informations de configuration réseau de base sous Windows."
+            },
+            {
+            "id": "q_res_29",
+            "question": "Quelle commande permet d'obtenir des détails supplémentaires sous Windows (serveur DHCP, serveurs DNS, adresse MAC) ?",
+            "options": [
+                "ipconfig /all",
+                "ping /all",
+                "tracert -a",
+                "netstat /show"
+            ],
+            "answerIndex": 0,
+            "explanation": "'ipconfig /all' affiche la configuration réseau détaillée."
+            },
+            {
+            "id": "q_res_30",
+            "question": "Quelle commande permet de tester la connectivité réseau vers une autre adresse IP ?",
+            "options": [
+                "tracert",
+                "ipconfig",
+                "ping",
+                "connect"
+            ],
+            "answerIndex": 2,
+            "explanation": "La commande 'ping' envoie des paquets ICMP pour vérifier si une cible répond sur le réseau."
+            },
+            {
+            "id": "q_res_31",
+            "question": "Quelle commande permet d'afficher la liste des routeurs traversés pour atteindre une destination IP ?",
+            "options": [
+                "TRACERT IPv4",
+                "PING /route",
+                "IPCONFIG /trace",
+                "NSLOOKUP /route"
+            ],
+            "answerIndex": 0,
+            "explanation": "La commande 'tracert' (Trace Route) identifie tous les sauts de routeurs jusqu'à la cible."
+            },
+            {
+            "id": "q_res_32",
+            "question": "Quel est le rôle d'un serveur DNS ?",
+            "options": [
+                "Attribuer des adresses IP dynamiques aux stations",
+                "Associer un nom de domaine (URL) à une adresse IP",
+                "Chiffrer le contenu des disques durs à distance",
+                "Gérer les droits des utilisateurs dans Active Directory"
+            ],
+            "answerIndex": 1,
+            "explanation": "Le DNS résout les noms intelligibles (ex: google.com) en adresses IP utilisables par le réseau."
+            },
+            {
+            "id": "q_res_33",
+            "question": "À quoi sert le protocole DHCP ?",
+            "options": [
+                "À sécuriser la navigation web",
+                "À convertir les adresses IPv4 en IPv6",
+                "À distribuer automatiquement les configurations IP (adresse, masque, passerelle) aux hôtes",
+                "À relier physiquement la baie de brassage au switch"
+            ],
+            "answerIndex": 2,
+            "explanation": "Le DHCP évite d'avoir à configurer manuellement l'adresse IP et le masque sur chaque machine."
+            },
+            {
+            "id": "q_res_34",
+            "question": "Qu'apporte le protocole HTTPS par rapport au protocole HTTP classique ?",
+            "options": [
+                "Une vitesse de connexion 10 fois plus rapide",
+                "L'attribution automatique d'une adresse IP",
+                "Le chiffrement, l'authentification et l'intégrité des données",
+                "L'élimination du besoin de passer par un routeur"
+            ],
+            "answerIndex": 2,
+            "explanation": "HTTPS sécurise les échanges web grâce à un certificat offrant chiffrement, authentification et contrôle d'intégrité."
+            },
+            {
+            "id": "q_res_35",
+            "question": "Qu'est-ce que l'Active Directory (AD) de Microsoft et un 'Domaine' ?",
+            "options": [
+                "Un composant matériel permettant de relier des câbles réseau",
+                "Un annuaire centralisé pour organiser et centraliser la gestion des comptes, machines et services au sein d'un même ensemble interconnecté",
+                "Un système de fichier rapide pour les disques durs SSD des serveurs",
+                "Un protocole de routage pour interconnecter les réseaux WAN"
+            ],
+            "answerIndex": 1,
+            "explanation": "L'Active Directory est un service d'annuaire regroupant les ressources d'un domaine pour gérer de manière centralisée les utilisateurs et ordinateurs."
+            }
+        ]
+        }
+    ]
     }
 ]
