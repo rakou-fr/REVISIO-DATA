@@ -88,5 +88,14 @@
     "pts": 0,
     "title": "COD",
     "progress": {}
+  },
+  {
+    "id": "AlexandreG",
+    "username": "Alex",
+    "passwordHash": "976a7b1389f751b2925af2474f567030a09bcded9134ea12b51b65f75cc6c718",
+    "role": "Fondation",
+    "pts": 0,
+    "title": "de bar",
+    "progress": {}
   }
 ]
